@@ -61,32 +61,33 @@ public class TodaysDate {
         System.out.println("The age in years of the animal is:"+ageInYears);
         System.out.println("the season of birth of the animal is:"+animalBirthSeasson);
         String[] ageAndGender = arrayOfStrPatOnComma[0].split(" ");
-        String ageInYears = ageAndGender[0];
+        ageInYears = ageAndGender[0];
         String animalBirthSeason = ageAndGender[3]; // Accessing 'spring'
 
         System.out.println("The age in years of the animal is: " + ageInYears);
         System.out.println("The season of birth of the animal is: " + animalBirthSeason);
         int animalBirthYear = currentYear - Integer.parseInt(ageInYears);
         String animalBirthdate="";
+        String strTodayYear = "";
         int todaysYear = Integer.parseInt(strTodayYear);
         int animalBirthyear = todaysYear-Integer.parseInt(ageInYears);
         if(animalBirthSeasson.contains("spring")){
             animalBirthdate = "2020-03-21";
         }
         if (animalBirthSeasson.contains("spring")){
-            animalBirthdate = Integer.toString(animalBirthyear)+"03-21"
+            animalBirthdate = Integer.toString(animalBirthyear)+"03-21";
 
         }
         if (animalBirthSeasson.contains("fall")){
-            animalBirthdate = Integer.toString(animalBirthyear)+"09-21"
+            animalBirthdate = Integer.toString(animalBirthyear)+"09-21";
 
         }
         if (animalBirthSeasson.contains("winter")){
-            animalBirthdate = Integer.toString(animalBirthyear)+"12-21"
+            animalBirthdate = Integer.toString(animalBirthyear)+"12-21";
 
         }
         if (animalBirthSeasson.contains("summer")){
-            animalBirthdate = Integer.toString(animalBirthyear)+"06-21"
+            animalBirthdate = Integer.toString(animalBirthyear)+"06-21";
 
         }
         System.out.println("\n animal birthdate ="+animalBirthdate);
